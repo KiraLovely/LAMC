@@ -1,0 +1,63 @@
+/*Grid Layout*/
+body {
+    background-image: linear-gradient(45deg,
+    rebeccapurple,mediumpurple,hotpink,deeppink,purple,rebeccapurple,mediumpurple);
+    background-size: 400% 400%;
+
+    animation: 30s EndGradient ease infinite;
+
+    display:grid;
+    grid-template-rows: auto auto 3fr;
+    grid-template-areas:
+            "nav"
+            "header"
+            "main";
+}
+nav {
+    grid-area: nav;
+    background-color: greenyellow;
+}
+
+header {
+    grid-area: header;
+
+    color: white;
+    font-size: 18px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+
+    color: white;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Lava Movement Background*/
+@keyframes EndGradient {
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}
+
+
+/*Table design*/
+table {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image_box_size {
+    height: 200px;
+    width: 355px;
+}
+
+figure {
+    margin: 0;
+}

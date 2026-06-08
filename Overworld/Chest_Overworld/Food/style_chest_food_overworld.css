@@ -1,0 +1,121 @@
+body {
+    background-image: url("img/background_overworld_chest.jpg");
+}
+
+.container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns:repeat(9, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    height: 800px;
+    grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav"
+            "header header header header header header header header header"
+            ". . potato beetroot egg bread carrot . ."
+            ". . raw_beef raw_porkchop raw_mutton raw_rabbit raw_chicken . ."
+            ". . apple cake cookie raw_salmon raw_cod . .";
+}
+header{
+    grid-area: header;
+    text-align: center;
+    font-size: 50px;
+}
+nav {
+    grid-area: nav;
+}
+.borders{
+    border: groove black 10px;
+    background-color: gray;
+}
+#potato{
+    grid-area: potato;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#beetroot{
+    grid-area: beetroot;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#egg{
+    grid-area: egg;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#bread{
+    grid-area: bread;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#carrot{
+    grid-area: carrot;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#raw_beef{
+    grid-area: raw_beef;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#raw_porkchop{
+    grid-area: raw_porkchop;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#raw_mutton{
+    grid-area: raw_mutton;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#raw_rabbit{
+    grid-area: raw_rabbit;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#raw_chicken{
+    grid-area: raw_chicken;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#apple{
+    grid-area: apple;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#cake{
+    grid-area: cake;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#cookie{
+    grid-area: cookie;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#raw_salmon{
+    grid-area: raw_salmon;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#raw_cod{
+    grid-area: raw_cod;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+

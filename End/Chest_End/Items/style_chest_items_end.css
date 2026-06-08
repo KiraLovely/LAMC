@@ -1,0 +1,82 @@
+body {
+    background-image: url("img/background_end_chest.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns:repeat(9, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    height: 800px;
+    grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav"
+            "header header header header header header header header header"
+            ". . dragon_head elytra ender_pearl eye_of_ender dragon_breath . ."
+            ". . . end_crystal bottle_o_enchanting shulker_shell . . .";
+}
+header{
+    grid-area: header;
+    text-align: center;
+    font-size: 50px;
+}
+nav {
+    grid-area: nav;
+}
+.borders{
+    border: groove black 10px;
+    background-color: gray;
+}
+#dragon_head{
+    grid-area: dragon_head;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#elytra{
+    grid-area: elytra;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#ender_pearl{
+    grid-area: ender_pearl;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#eye_of_ender{
+    grid-area: eye_of_ender;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#dragon_breath{
+    grid-area: dragon_breath;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#end_crystal{
+    grid-area: end_crystal;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#bottle_o_enchanting{
+    grid-area: bottle_o_enchanting;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#shulker_shell{
+    grid-area: shulker_shell;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+

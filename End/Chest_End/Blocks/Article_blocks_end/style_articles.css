@@ -1,0 +1,40 @@
+body{
+    background-image: url("../img/article_book.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container {
+    display: grid;
+    height: 600px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px auto;
+    grid-template-areas:"nav nav"
+                        "section_image section_information";
+}
+
+nav{
+    grid-area: nav;
+}
+
+#item_foto{
+    grid-area: section_image;
+    margin: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+figcaption{
+    border: navajowhite solid 5px;
+    background-color: antiquewhite;
+}
+h2{
+    text-align: center;
+}
+
+#information{
+    grid-area: section_information;
+    width: 550px;
+    height: 550px;
+    font-size: 18px;
+    margin-left: 40px;
+}
+

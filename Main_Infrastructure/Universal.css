@@ -1,0 +1,16 @@
+h2, h1, a, figcaption, p, table, button{
+    font-family: 'Minecraft', sans-serif;
+}
+
+ul li {
+    font-family: 'Minecraft', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: rebeccapurple;
+}

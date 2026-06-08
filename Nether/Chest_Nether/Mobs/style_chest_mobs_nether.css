@@ -1,0 +1,92 @@
+body {
+    background-image: url("img/background_nether_chest.jpg");
+}
+
+.container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns:repeat(9, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    height: 800px;
+    grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav"
+            "header header header header header header header header header"
+            ". . piglin zombie_pigman hoglin zoglin blaze . ."
+            ". . wither_skeleton ghast magma_cube strider piglin_brute . .";
+}
+header{
+    grid-area: header;
+    text-align: center;
+    font-size: 50px;
+}
+nav {
+    grid-area: nav;
+}
+.borders{
+    border: groove black 10px;
+    background-color: gray;
+}
+#piglin{
+    grid-area: piglin;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#zombie_pigman{
+    grid-area: zombie_pigman;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#hoglin{
+    grid-area: hoglin;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#zoglin{
+    grid-area: zoglin;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#blaze{
+    grid-area: blaze;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#wither_skeleton{
+    grid-area: wither_skeleton;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#ghast{
+    grid-area: ghast;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#magma_cube{
+    grid-area: magma_cube;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#strider{
+    grid-area: strider;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#piglin_brute{
+    grid-area: piglin_brute;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+

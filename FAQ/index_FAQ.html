@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+   <meta charset="UTF-8">
+   <meta name="author" content="Nils Folschette UND Miguel Cardoso">
+   <meta name="description" content="Ein Projekt für die Schule - Minecraft Wiki">
+   <meta name="keywords" content="LAMC, Minecraft, LAM, Education, Wiki">
+
+   <link rel="stylesheet" href="style_FAQ.css">
+   <link rel="stylesheet" href="../Main_Infrastructure/Universal.css">
+   <link rel="stylesheet" href="../Main_Infrastructure/navigationBar.css">
+
+   <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+   <link rel="icon" type="image/x-icon" href="img/favicon_minecraft.png">
+
+   <title>LAMC - FAQ</title>
+</head>
+<body>
+
+
+<header class="structure-blocks">
+   <h1>Frequently asked questions</h1>
+</header>
+
+<nav>
+   <a id="XP_Bar" title="Hier gehts zur Startseite!" href="../Index_MC.html">
+      LAMC
+   </a>
+   <div class="dropdown_menu">
+      <button title="Menü" class="dropdown_button">Menu</button>
+      <div class="dropdown_content">
+
+         <a title="Gehe zum Auswahl-Menü" href=../Overworld/index_overworld.html>
+            Overworld
+         </a>
+         <a title="Gehe zum Auswahl-Menü" href=../"Nether/index_nether.html">
+            Nether
+         </a>
+         <a title="Gehe zum Auswahl-Menü" href="../End/index_end.html">
+            End
+         </a>
+         <a title="Gehe zum Auswahl-Menü" href="../settings/index_settings.html">
+            Settings
+         </a>
+         <a title="Gehe zum Auswahl-Menü" href="../FAQ/index_FAQ.html">
+            FAQ
+         </a>
+
+      </div>
+   </div>
+</nav>
+
+<main class="structure-blocks">
+   <table>
+      <tr>
+         <td>
+            <button type="button" class="collapsible">Wer sind wir?</button>
+               <div class="collapsible_content">
+                  <p class="resizing">
+                     Wir sind 2 Schüler aus dem LAM! Miguel und Nils!
+                  </p>
+               </div>
+         </td>
+         <td>
+            <button type="button" class="collapsible">Was ist diese Webseite?</button>
+            <div class="collapsible_content">
+               <p class="resizing">
+                  Dies ist ein Minecraft-Wiki. Die Webseite selbst ist das Schlussprojekt unseres Kurses.
+               </p>
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <button type="button" class="collapsible">Wie lade ich Texturenpakete herunter?</button>
+            <div class="collapsible_content">
+               <p class="resizing">
+                  Es gibt verschiedene Webseiten, bei der man Texturenpakete laden kann.
+                  Die Datei muss man in den "Texturepack" ordner hinzufügen. Wenn nötig auch entpacken.
+               </p>
+            </div>
+         </td>
+         <td>
+            <button type="button" class="collapsible">Wie lade ich Mods herunter?</button>
+            <div class="collapsible_content">
+               <p class="resizing">
+                  Man benötigt einen neuen "Launcher", der Mods laden kann. Der bekannteste ist Curse-Forge.
+                  Dieser kann, Forge, Fabric und Neo-Forge basierte Mods laden.
+               </p>
+            </div>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <button type="button" class="collapsible">Wo finde ich Minecraft-News?</button>
+            <div class="collapsible_content">
+               <p class="resizing">
+                  Auf der Offiziellen Webseite von
+                  <a style="color:blue" target="_blank" title="Minecraft-Website" href="https://www.minecraft.net/en-us/articles">Minecraft</a>
+               </p>
+            </div>
+         </td>
+         <td>
+            <button type="button" class="collapsible">Wer ist Mojang?</button>
+            <div class="collapsible_content">
+               <p class="resizing">
+                 Mojang ist das Originale Entwickler Studio von Minecraft, gegründet von Notch.
+               </p>
+            </div>
+         </td>
+      </tr>
+   </table>
+
+   <script> /*Button Collapse Function*/
+       var coll = document.getElementsByClassName("collapsible");
+       var i;
+
+       for (i = 0; i < coll.length; i++) {
+           coll[i].addEventListener("click", function() {
+               this.classList.toggle("active");
+               var content = this.nextElementSibling;
+               if (content.style.display === "block") {
+                   content.style.display = "none";
+               } else {
+                   content.style.display = "block";
+               }
+           });
+       }
+   </script>
+</main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+/*Grid Layout*/
+body {
+    background-image: url("../img/cave_background.png");
+    background-color: black;
+
+    display:grid;
+    grid-template-rows: auto auto 3fr;
+    grid-template-areas:
+            "nav"
+            "header"
+            "main";
+}
+nav {
+    grid-area: nav;
+
+    background-color: greenyellow;
+}
+
+header {
+    grid-area: header;
+
+    color: white;
+    font-size: 18px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+
+    color: white;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/*Table design*/
+table {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image_box_size {
+    height: 200px;
+    width: 355px;
+}
+
+figure {
+    margin: 0;
+}

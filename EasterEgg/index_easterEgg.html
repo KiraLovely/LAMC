@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Nils Folschette UND Miguel Cardoso">
+	<meta name="description" content="Ein Projekt für die Schule - Minecraft Wiki">
+	<meta name="keywords" content="LAMC, Minecraft, LAM, Education, Wiki">
+
+	<link rel="stylesheet" href="../Main_Infrastructure/Universal.css">
+	<link rel="stylesheet" href="../Main_Infrastructure/navigationBar.css">
+	<link rel="stylesheet" href="../Main_Infrastructure/easterEgg.css">
+
+	<link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="../Main_Infrastructure/img/favicon_minecraft.png">
+	<title>Lava Chicken</title>
+
+	<style>
+		#container {
+			display: none;
+			text-align: center;
+		}
+
+		#secret {
+			margin-top: 1000px;
+		}
+	</style>
+</head>
+
+<body>
+
+<h1>LA- LA- LAVA CH- CH- CHICKEN</h1>
+<video width="700" height="500" controls autoplay>
+	<source
+		src="../Main_Infrastructure/video/Jack_Black_-_Steves_Lava_Chicken_Official_Music_Video_A_Minecraft_Movie_Soundtrack_WaterTower.mp4"
+		type="video/mp4" >
+</video>
+
+<div id="secret">
+	<h2 title="Groß klein klein klein klein klein">Finde das
+		<span style="color:blue">P</span>
+		<span style="color:green">a</span>
+		<span style="color:yellow">s</span>
+		<span style="color:deeppink">s</span>
+		<span style="color:rebeccapurple">w</span>
+		<span style="color:orangered">o</span>
+		rt
+	</h2>
+	<form id="pswd">
+		<input type="password" id="validate" placeholder="Gib mir das Passwort">
+		<button type="button" onclick="EasterEgg()">Abgeben</button>
+	</form>
+	<div id="container">
+		<h2>Korrektes Passwort</h2>
+		<a title="Geheimnis" href="secret/secret.html">Du hast es entdeckt..</a>
+	</div>
+</div>
+
+<script>
+	function EasterEgg() {
+		let inputPswd = document.getElementById("validate").value;
+		let correctPswd = "Techno";
+		if (inputPswd === correctPswd) {
+			document.getElementById("container").style.display = "block";
+			document.getElementById("pswd").style.display = "none";
+		} else {
+			alert("Falsches Passwort!")
+		}
+	}
+</script>
+</body>
+</html>

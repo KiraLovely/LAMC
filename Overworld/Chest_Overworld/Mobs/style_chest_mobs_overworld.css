@@ -1,0 +1,121 @@
+body {
+    background-image: url("img/background_overworld_chest.jpg");
+}
+
+.container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns:repeat(9, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    height: 800px;
+    grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav"
+            "header header header header header header header header header"
+            ". . chicken cow pig sheep horse . ."
+            ". . zombie skeleton spider creeper slime . ."
+            ". . villager wandering_trader iron_golem cat wolf . .";
+}
+header{
+    grid-area: header;
+    text-align: center;
+    font-size: 50px;
+}
+nav {
+    grid-area: nav;
+}
+.borders{
+    border: groove black 10px;
+    background-color: gray;
+}
+#chicken{
+    grid-area: chicken;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#cow{
+    grid-area: cow;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#pig{
+    grid-area: pig;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#sheep{
+    grid-area: sheep;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#horse{
+    grid-area: horse;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#zombie{
+    grid-area: zombie;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#skeleton{
+    grid-area: skeleton;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#spider{
+    grid-area: spider;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#creeper{
+    grid-area: creeper;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#slime{
+    grid-area: slime;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#villager{
+    grid-area: villager;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#wandering_trader{
+    grid-area: wandering_trader;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#iron_golem{
+    grid-area: iron_golem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#cat{
+    grid-area: cat;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#wolf{
+    grid-area: wolf;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+

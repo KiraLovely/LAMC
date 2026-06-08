@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+    color: White;
+    height: 770px;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 3fr;
+    gap: 15px 10px;
+    grid-template-areas:
+            "nav nav"
+            "header header"
+            "questions questions";
+}
+
+nav {
+    grid-area: nav;
+    background-color: black;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+}
+
+main {
+    grid-area: questions;
+    background-color: black;
+}
+
+.structure-blocks {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+/*NavBar*/
+nav {
+    padding: 5px;
+    border-radius: 10px;
+    background-image: conic-gradient(from var(--XP-Fade),
+    green,greenyellow,green,greenyellow,green,greenyellow,green);
+
+    animation: 30s XP-upNdown linear infinite;
+}
+
+@property --XP-Fade {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes XP-upNdown{
+    from{
+        --XP-Fade:0deg
+    }
+    to{
+        --XP-Fade: 360deg;
+    }
+}
+
+/*Text*/
+h1 {
+    font-size: 300%;
+}
+
+
+
+/*Buttons Design*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-size: 20px;
+}
+td {
+    border: 5px black groove;
+    padding: 40px 300px;
+    background-color: slategray;
+    width: 300%;
+}
+
+.resizing {
+    font-size: 20px;
+}
+
+.collapsible {
+    background-color: slategray;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Minecraft', sans-serif;
+}
+
+.collapsible_content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: slategray;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.active, .collapsible:hover {
+    background-color: slategray;
+}

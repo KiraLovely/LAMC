@@ -1,0 +1,92 @@
+body {
+    background-image: url("img/background_nether_chest.jpg");
+}
+
+.container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns:repeat(9, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    height: 800px;
+    grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav"
+            "header header header header header header header header header"
+            ". . netherite_scrap blaze_rod blaze_powder ghast_tear magma_cream . ."
+            ". . gold_nugget nether_quartz nether_wart skeleton_skull netherite_upgrade_smithing_template . .";
+}
+header{
+    grid-area: header;
+    text-align: center;
+    font-size: 50px;
+}
+nav {
+    grid-area: nav;
+}
+.borders{
+    border: groove black 10px;
+    background-color: gray;
+}
+#netherite_scrap{
+    grid-area: netherite_scrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#blaze_rod{
+    grid-area: blaze_rod;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#blaze_powder{
+    grid-area: blaze_powder;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#ghast_tear{
+    grid-area: ghast_tear;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#magma_cream{
+    grid-area: magma_cream;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#gold_nugget{
+    grid-area: gold_nugget;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#nether_quartz{
+    grid-area: nether_quartz;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#nether_wart{
+    grid-area: nether_wart;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#skeleton_skull{
+    grid-area: skeleton_skull;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#netherite_upgrade_smithing_template{
+    grid-area: netherite_upgrade_smithing_template;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+

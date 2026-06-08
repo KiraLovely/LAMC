@@ -1,0 +1,121 @@
+body {
+    background-image: url("img/background_overworld_chest.jpg");
+}
+
+.container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns:repeat(9, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    height: 800px;
+    grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav"
+            "header header header header header header header header header"
+            ". . diamond_helmet diamond_chestplate diamond_leggings diamond_boots shield . ."
+            ". . diamond_sword diamond_pickaxe diamond_axe diamond_shovel diamond_hoe . ."
+            ". . diamond redstone_dust gold_ingot iron_ingot coal . .";
+}
+header{
+    grid-area: header;
+    text-align: center;
+    font-size: 50px;
+}
+nav {
+    grid-area: nav;
+}
+.borders{
+    border: groove black 10px;
+    background-color: gray;
+}
+#diamond_helmet{
+    grid-area: diamond_helmet;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#diamond_chestplate{
+    grid-area: diamond_chestplate;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#diamond_leggings{
+    grid-area: diamond_leggings;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#diamond_boots{
+    grid-area: diamond_boots;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#shield{
+    grid-area: shield;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#diamond_sword{
+    grid-area: diamond_sword;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#diamond_pickaxe{
+    grid-area: diamond_pickaxe;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#diamond_axe{
+    grid-area: diamond_axe;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#diamond_shovel{
+    grid-area: diamond_shovel;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#diamond_hoe{
+    grid-area: diamond_hoe;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#diamond{
+    grid-area: diamond;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#redstone_dust{
+    grid-area: redstone_dust;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#gold_ingot{
+    grid-area: gold_ingot;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#iron_ingot{
+    grid-area: iron_ingot;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#coal{
+    grid-area: coal;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+

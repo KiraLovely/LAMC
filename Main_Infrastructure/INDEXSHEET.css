@@ -1,0 +1,182 @@
+/*This is for the layout of items and the grid*/
+
+body {
+    background-color: black;
+    background-image: url("img/TestPicture2.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    height: 770px;
+    font-size: 130%;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 5fr 1fr 2fr;
+    grid-template-rows: auto 2fr 4fr auto;
+    grid-template-areas:
+            "nav nav nav nav nav"
+            ". header header header ."
+            "Nils main main main Miguel"
+            "footer footer footer footer footer";
+}
+
+
+header {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+#Nils {
+    grid-area: Nils;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color:white;
+}
+#Skinflip {
+    transform: scaleX(-1);
+}
+
+#Miguel {
+    grid-area: Miguel;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color:white;
+}
+
+footer {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: footer;
+
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "Left . Right";
+}
+
+#Left {
+    grid-area: Left;
+    background-image: url("img/stone.png");
+    background-repeat: repeat;
+    padding: 3%;
+}
+#Right {
+    grid-area: Right;
+    background-image: url("img/stone.png");
+    background-repeat: repeat;
+    padding: 3%;
+}
+
+
+main {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: main;
+
+    display:grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            ". B_Overworld B_Overworld ."
+            ". B_Nether B_Nether ."
+            ". B_End B_End ."
+            "B_FAQ B_Settings B_EasterEgg B_Bland";
+}
+
+.Menu_Button {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#Overworld {
+    grid-area: B_Overworld;
+}
+#Nether {
+    grid-area: B_Nether;
+}
+#End{
+    grid-area: B_End;
+}
+#FAQ {
+    grid-area: B_FAQ;
+}
+#Settings {
+    grid-area: B_Settings;
+}
+#EasterEgg {
+    grid-area: B_EasterEgg;
+}
+#Bland {
+    grid-area: B_Bland;
+}
+
+
+
+/*This is for the button design*/
+
+a#OverworldLink {
+    border: gray groove 5px;
+    padding: 20px 40%;
+    background-color: darkgray;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+a#NetherLink {
+    border: gray groove 5px;
+    padding: 20px 43%;
+    background-color: darkgray;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+a#EndLink {
+    border: gray groove 5px;
+    padding: 20px 44%;
+    background-color: darkgray;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+a#SettingsLink {
+    border: gray groove 5px;
+    padding: 20px 27%;
+    background-color: darkgray;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+a#EasterEggLink {
+    border: gray groove 5px;
+    padding: 20px 27%;
+    background-color: darkgray;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+a#FAQLink {
+    border: gray groove 5px;
+    padding: 20px 10%;
+    background-color: darkgray;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+a#BlandLink {
+    border: gray groove 5px;
+    padding: 20px 10%;
+    background-color: darkgray;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}

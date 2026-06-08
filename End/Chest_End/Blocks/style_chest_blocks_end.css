@@ -1,0 +1,81 @@
+body {
+    background-image: url("img/background_end_chest.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns:repeat(9, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    height: 800px;
+    grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav"
+            "header header header header header header header header header"
+            ". . end_stone end_stone_bricks purpur_block purpur_pillar purpur_slab . ."
+            ". . . chorus_plant chorus_flower dragon_egg . . .";
+}
+nav {
+    grid-area: nav;
+}
+header {
+    grid-area: header;
+    text-align: center;
+    font-size: 50px;
+}
+.borders{
+    border: groove black 10px;
+    background-color: gray;
+}
+#end_stone{
+    grid-area: end_stone;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#end_stone_bricks{
+    grid-area: end_stone_bricks;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#purpur_block{
+    grid-area: purpur_block;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#purpur_pillar{
+    grid-area: purpur_pillar;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#purpur_slab{
+    grid-area: purpur_slab;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#chorus_plant{
+    grid-area: chorus_plant;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#chorus_flower{
+    grid-area: chorus_flower;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#dragon_egg{
+    grid-area: dragon_egg;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+

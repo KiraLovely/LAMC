@@ -1,0 +1,121 @@
+body {
+    background-image: url("img/background_overworld_chest.jpg");
+}
+
+.container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns:repeat(9, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    height: 800px;
+    grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav"
+            "header header header header header header header header header"
+            ". . dirt stone bedrock gravel sand . ."
+            ". . block_of_iron block_of_diamond block_of_redstone block_of_emerald block_of_gold . ."
+            ". . crafting_table furnace smithing_table anvil enchantement_table . .";
+}
+header{
+    grid-area: header;
+    text-align: center;
+    font-size: 50px;
+}
+nav {
+    grid-area: nav;
+}
+.borders{
+    border: groove black 10px;
+    background-color: gray;
+}
+#dirt{
+    grid-area: dirt;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#stone{
+    grid-area: stone;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#bedrock{
+    grid-area: bedrock;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#gravel{
+    grid-area: gravel;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#sand{
+    grid-area: sand;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#block_of_iron{
+    grid-area: block_of_iron;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#block_of_diamond{
+    grid-area: block_of_diamond;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#block_of_redstone{
+    grid-area: block_of_redstone;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#block_of_emerald{
+    grid-area: block_of_emerald;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#block_of_gold{
+    grid-area: block_of_gold;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#crafting_table{
+    grid-area: crafting_table;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#furnace{
+    grid-area: furnace;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#smithing_table{
+    grid-area: smithing_table;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#anvil{
+    grid-area: anvil;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#enchantement_table{
+    grid-area: enchantement_table;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+

@@ -1,0 +1,122 @@
+body {
+    background-image: url("img/background_nether_chest.jpg");
+}
+
+.container {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    grid-template-columns:repeat(9, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    height: 800px;
+    grid-template-areas:
+            "nav nav nav nav nav nav nav nav nav"
+            "header header header header header header header header header"
+            ". . block_of_netherite ancient_debris nether_quartz_ore soul_sand soul_soil . ."
+            ". . netherrack basalt blackstone glowstone magma_block . ."
+            ". . crying_obsidian obsidian respawn_anchor nether_bricks warped_nylium . .";
+}
+header{
+    grid-area: header;
+    text-align: center;
+    font-size: 50px;
+}
+nav {
+    grid-area: nav;
+}
+.borders{
+    border: groove black 10px;
+    background-color: gray;
+}
+#block_of_netherite{
+    grid-area: block_of_netherite;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#ancient_debris{
+    grid-area: ancient_debris;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#nether_quartz_ore{
+    grid-area: nether_quartz_ore;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#soul_sand{
+    grid-area: soul_sand;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#soul_soil{
+    grid-area: soul_soil;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#netherrack{
+    grid-area: netherrack;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#basalt{
+    grid-area: basalt;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#blackstone{
+    grid-area: blackstone;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#glowstone{
+    grid-area: glowstone;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#magma_block{
+    grid-area: magma_block;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#crying_obsidian{
+    grid-area: crying_obsidian;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#obsidian{
+    grid-area: obsidian;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#respawn_anchor{
+    grid-area: respawn_anchor;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#nether_bricks{
+    grid-area: nether_bricks;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#warped_nylium{
+    grid-area: warped_nylium;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+

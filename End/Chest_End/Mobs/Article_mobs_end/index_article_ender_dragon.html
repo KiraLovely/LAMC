@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Nils Folschette UND Miguel Cardoso">
+	<meta name="description" content="Ein Projekt für die Schule - Minecraft Wiki">
+	<meta name="keywords" content="LAMC, Minecraft, LAM, Education, Wiki">
+
+	<link rel="stylesheet" href="style_articles.css">
+	<link rel="icon" type="image/x-icon" href="../img/favicon_minecraft.png">
+	<link rel="stylesheet" href="../../../../Main_Infrastructure/Universal.css">
+	<link rel="stylesheet" href="../../../../Main_Infrastructure/navigationBar.css">
+	<link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+	<title>Article</title>
+</head>
+<body>
+<div class="container">
+
+	<nav>
+		<a id="XP_Bar" title="Hier gehts zur Startseite!" href="../../../../Index_MC.html">
+			LAMC
+		</a>
+		<div class="dropdown_menu">
+			<button title="Menü" class="dropdown_button">Menu</button>
+			<div class="dropdown_content">
+
+				<a title="Gehe zum Auswahl-Menü" href="../../../../Overworld/index_overworld.html">
+					Overworld
+				</a>
+				<a title="Gehe zum Auswahl-Menü" href="../../../../Nether/index_nether.html">
+					Nether
+				</a>
+				<a title="Gehe zum Auswahl-Menü" href="../../../../End/index_end.html">
+					End
+				</a>
+				<a title="Gehe zum Auswahl-Menü" href="../../../../settings/index_settings.html">
+					Settings
+				</a>
+				<a title="Gehe zum Auswahl-Menü" href="../../../../FAQ/index_FAQ.html">
+					FAQ
+				</a>
+
+			</div>
+		</div>
+	</nav>
+
+	<section id="item_foto">
+		<figure>
+			<img src="img/ender_dragon.png" alt="Ender Dragon" width="70%">
+			<figcaption>Ender Dragon (Ender Drache)</figcaption>
+		</figure>
+	</section>
+	<article id="information" class="border">
+		<h2>Information</h2>
+		<p><strong>Beschreibung:</strong></p>
+		<p>Der Enderdrache ist der Endboss von Minecraft und die mächtigste Kreatur im Spiel. Sie erscheint in der
+			End-Dimension und gilt als ultimative Herausforderung für Spieler. Laut den Entwicklern trägt der Drache den
+			inoffiziellen Namen <strong>Jean</strong>.</p>
+		<p><strong>Verhalten:</strong></p>
+		<ul>
+			<li>Fliegt durch das End und greift Spieler mit Feuerbällen und Nahkampfangriffen an</li>
+			<li>Wird von Endkristallen geheilt, solange diese aktiv sind</li>
+			<li>Wird nach dem Besiegen nicht automatisch respawned, kann aber erneut beschworen werden</li>
+		</ul>
+		<p><strong>Verwendung:</strong></p>
+		<ul>
+			<li>Nach dem Besiegen erscheint ein Drachenei als Trophäe</li>
+			<li>Belohnt Spieler mit einer großen Menge an Erfahrungspunkten</li>
+			<li>Ermöglicht durch erneutes Beschwören das mehrfache Besiegen und Farmen</li>
+		</ul>
+
+		<button title="Plays a random sound from this mob." onclick="playRandomAudio()" type="button">Play me!</button>
+	</article>
+
+</div>
+
+<script>
+	const audioArray = ["sounds/Ender_dragon_death.ogg",
+		"sounds/Ender_dragon_idle1.ogg", "sounds/Ender_dragon_idle2.ogg", "sounds/Ender_dragon_idle3.ogg"];
+	let currentAudio;
+
+	function playRandomAudio() {
+
+		if (currentAudio) {
+			currentAudio.pause();
+			currentAudio.currentTime = 0;
+		}
+
+		const audioIndex = Math.floor(Math.random() * audioArray.length);
+		const audio = new Audio(audioArray[audioIndex]);
+
+		currentAudio = audio;
+
+		audio.play();
+	}
+</script>
+
+</body>
+</html>
